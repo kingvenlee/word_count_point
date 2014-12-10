@@ -11,5 +11,5 @@ word_count:$(objects)
 #initialize.o:
 
 clean:
-	rm $(objects)
-	rm word_count
+	@rm -rf $(objects)
+	@rm -rf word_count

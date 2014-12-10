@@ -46,8 +46,8 @@ void add_word(char *word)
 		pos->count++;
 	} else {
 		new_word = creat_word(word);
-		if (prev == NULL) {
-			/*插入到初始位置*/
+		if (prev == NULL) {		/*there is no item in the list, so pos == NULL */
+			/*insert to the head of list*/
 			new_word->next = word_header;
 			word_header = new_word;
 		} else {
